@@ -106,8 +106,8 @@
             },
             methods: {
                 addToCart(name, index) {
-                    //if (!this.cart[name]) !this.cart[name] = 0
-                    //receive type and number 
+                    if (!this.cart[name]) this.cart[name] = 0
+                        //receive type and number 
                     this.cart[name] += this.inventory[index].quantity
                     console.log(this.cart)
                 },
