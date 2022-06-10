@@ -173,10 +173,27 @@
         let app = Vue.createApp({
             data() {
                 return {
-                    inventory:
+                    inventory: {
+                        carrots: 0,
+                        pineapples: 0,
+                        cherries: 0
+                    },
+                    cart: {
+                        carrots: 0,
+                        pineapples: 0,
+                        cherries: 0
+                    }
+                }
+            },
+            methods: {
+                addToCart(type) {
+                    //receive type and number 
+                    this.cart[type] += this.inventory[type]
+                    console.log(this.cart)
                 }
             }
         })
+
         app.mount('#app')
     </script>
 
