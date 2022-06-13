@@ -98,7 +98,6 @@ app.component('sidebar', {
     </div> 
     </div> 
 </aside>
-
 `
 })
 
