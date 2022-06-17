@@ -19,7 +19,17 @@
             </router-link>  -->
         </header>
   <router-view/>
+
+  <Sidebar />
+
 </template>
 
-<style scoped>
-</style>
+ <script>
+ import Sidebar from '@components/Sidebar.vue'
+
+ export default{
+  components:{
+    Sidebar
+  }  
+ }
+ </script>
