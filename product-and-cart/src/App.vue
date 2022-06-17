@@ -20,7 +20,7 @@
         </header>
   <router-view :inventory="inventory"/>
 
-  <SideBar
+  <Sidebar
    v-if="showSidebar"
    :toggle="toggleSidebar"
    :cart="cart"
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Sidebar from '@components/Sidebar.vue'
+import Sidebar from '@/components/Sidebar.vue'
 import food from './food.json'
 
 export default {
