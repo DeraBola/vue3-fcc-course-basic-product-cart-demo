@@ -16,9 +16,9 @@
           <div @click="toggleSidebar" class="top-bar-cart-link">
                 <i class="icofont-cart-alt icofont-1x"></i>
                 <span>Cart ({{totalQuantity}})</span>
-            </div>  
+            </div>
         </header>
-  <router-view :inventory="inventory"/>
+  <router-view :inventory="inventory"  :addToCart="addToCart"/>
 
   <Sidebar
    v-if="showSidebar"
@@ -40,7 +40,7 @@ export default {
   },
   data () {
     return {
-      showSidebar: true,
+      showSidebar: false,
       inventory: food,
       cart: {}
     }
