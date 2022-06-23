@@ -233,3 +233,13 @@
         </main>
 
 </template>
+<script>
+import ProductCard from '@/components/ProductCard.vue' 
+
+export default{
+     props: ['inventory', 'addToCart'],
+     components:{
+      ProductCard  
+     }
+}
+</script>

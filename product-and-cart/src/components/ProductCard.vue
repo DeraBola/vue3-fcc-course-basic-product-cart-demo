@@ -31,7 +31,7 @@
       </form>
     </div>
     <div class="card-footer">
-      <button @click="addToCart(product.name, index)" class="btn btn-light">
+      <button @click="addToCart(product.name, quantity)" class="btn btn-light">
         Add to cart
       </button>
     </div>
@@ -39,12 +39,12 @@
 </template>
 
 <script>
-export default{
-    props:['product', 'index'],
-    data(){
-      return{
-          quantity:0
-      }
+export default {
+  props: ['product', 'index', 'addToCart'],
+  data () {
+    return {
+      quantity: 0
     }
+  }
 }
 </script>
